@@ -9,6 +9,7 @@ body {
 
 button {
     border: none !important;
+    border-radius: 0 !important;
 }
 
 button:focus {
@@ -247,12 +248,12 @@ button:focus {
     background-size: cover;
 }
 
-.hp-contact .contact-wrapper {
+.hp-contact .hp-contact-wrapper {
     min-height: 920px;
     padding: 5rem 0;
 }
 
-.contact-wrapper .contact-head h3 {
+.hp-contact-wrapper .hp-contact-head h3 {
     font-weight: 1000;
     font-family: 'Ranade', sans-serif;
     font-size: 180px;
@@ -262,7 +263,7 @@ button:focus {
 }
 
 @media (max-width: 992px) {
-    .contact-wrapper .contact-head h3 {
+    .hp-contact-wrapper .hp-contact-head h3 {
         font-weight: 1000;
         font-family: 'Ranade', sans-serif;
         font-size: 130px;
@@ -273,7 +274,7 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-    .contact-wrapper .contact-head h3 {
+    .hp-contact-wrapper .hp-contact-head h3 {
         font-weight: 1000;
         font-family: 'Ranade', sans-serif;
         font-size: 100px;
@@ -284,7 +285,7 @@ button:focus {
 }
 
 @media (max-width: 576px) {
-    .contact-wrapper .contact-head h3 {
+    .hp-contact-wrapper .hp-contact-head h3 {
         font-weight: 1000;
         font-family: 'Ranade', sans-serif;
         font-size: 70px;
@@ -294,12 +295,12 @@ button:focus {
     }
 }
 
-.contact-body {
+.hp-contact-body {
     margin-top: 4rem;
 }
 
-.contact-body form input,
-.contact-body form textarea {
+.hp-contact-body form input,
+.hp-contact-body form textarea {
     background-color: transparent;
     border: none !important;
     border-bottom: 2px solid #fff !important;
@@ -308,22 +309,22 @@ button:focus {
     font-family: 'Tabular', sans-serif;
 }
 
-.contact-body form input::placeholder,
-.contact-body form textarea::placeholder {
+.hp-contact-body form input::placeholder,
+.hp-contact-body form textarea::placeholder {
     color: #fff !important;
 }
 
-.contact-body form input:focus {
+.hp-contact-body form input:focus {
     background-color: transparent !important;
     box-shadow: none;
 }
 
-.contact-body form textarea:focus {
+.hp-contact-body form textarea:focus {
     background-color: transparent !important;
     box-shadow: none;
 }
 
-.contact-body form button {
+.hp-contact-body form button {
     background-color: transparent;
     border: 2px solid #fff !important;
     color: #fff;
@@ -334,7 +335,7 @@ button:focus {
 }
 
 @media (max-width: 576px) {
-    .contact-body form button {
+    .hp-contact-body form button {
         background-color: transparent;
         border: 2px solid #fff !important;
         color: #fff;
@@ -346,8 +347,8 @@ button:focus {
 }
 
 
-.contact-body .link-1 h3,
-.contact-body .link-2 h3 {
+.hp-contact-body .link-1 h3,
+.hp-contact-body .link-2 h3 {
     font-family: 'Ranade', sans-serif;
     font-weight: 800;
     font-size: 30px;
@@ -355,8 +356,8 @@ button:focus {
     text-transform: uppercase;
 }
 
-.contact-body .link-1 h5,
-.contact-body .link-2 h5 {
+.hp-contact-body .link-1 h5,
+.hp-contact-body .link-2 h5 {
     font-size: 18px;
     font-family: 'Tabular', sans-serif;
 
@@ -725,4 +726,127 @@ button:focus {
         font-weight: 400;
         font-size: 18px;
     }
+}
+
+
+/* Contact page */
+
+.contact .contact-wrapper {
+    min-height: 920px;
+    padding: 5rem 0;
+}
+
+.contact-wrapper .contact-head h3 {
+    font-weight: 1000;
+    font-family: 'Ranade', sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    word-spacing: -10px;
+}
+
+@media (max-width: 992px) {
+    .contact-wrapper .contact-head h3 {
+        font-weight: 1000;
+        font-family: 'Ranade', sans-serif;
+        font-size: 130px;
+        text-transform: uppercase;
+        letter-spacing: -5px;
+        word-spacing: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper .contact-head h3 {
+        font-weight: 1000;
+        font-family: 'Ranade', sans-serif;
+        font-size: 80px;
+        text-transform: uppercase;
+        letter-spacing: -5px;
+        word-spacing: -10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-wrapper .contact-head h3 {
+        font-weight: 1000;
+        font-family: 'Ranade', sans-serif;
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        word-spacing: -3px;
+    }
+}
+
+.contact-body {
+    margin-top: 4rem;
+    padding: 0 1rem;
+}
+
+.contact-body form input,
+.contact-body form textarea {
+    background-color: transparent;
+    border: none !important;
+    border-bottom: 2px solid #000 !important;
+    margin-bottom: 2rem;
+    color: #000 !important;
+    font-family: 'Tabular', sans-serif;
+    padding: 0 0 !important;
+    font-weight: 500;
+}
+
+.contact-body form input::placeholder,
+.contact-body form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.563) !important;
+}
+
+.contact-body form input:focus {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.contact-body form textarea:focus {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.contact-body form button {
+    background-color: transparent;
+    border: 2px solid #000 !important;
+    color: #000;
+    font-family: 'Ranade', sans-serif;
+    font-weight: 800;
+    padding: 1.25rem 2rem;
+    font-size: 22px;
+}
+
+@media (max-width: 576px) {
+    .contact-body form button {
+        background-color: transparent;
+        border: 2px solid #000 !important;
+        color: #000;
+        font-family: 'Ranade', sans-serif;
+        font-weight: 800;
+        padding: 1rem 1.5rem;
+        font-size: 22px;
+    }
+}
+
+
+.contact-body .link-1 h3,
+.contact-body .link-2 h3 {
+    font-family: 'Ranade', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000 !important;
+}
+
+.contact-body .link-1 h5,
+.contact-body .link-2 h5 {
+    font-size: 18px;
+    font-family: 'Tabular', sans-serif;
+    color: #000 !important;
+
 }

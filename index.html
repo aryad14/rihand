@@ -11,27 +11,68 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
 
 
     <!-- Fonts -->
     <link href="https://api.fontshare.com/v2/css?f[]=montserrat@500,700,200,400,100,800,300,600&display=swap"
         rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=asap@700,600,500,400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=tabular@600,700,500,400,300&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,100,400,500&display=swap" rel="stylesheet">
 
     <title>Dinesh Patel - Home</title>
+
+
+    <!-- Internal CSS -->
+    <style>
+        /* Change Column Count to change Columns in the Gallery */
+        #app {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 2;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 20px;
+            transition: all .35s ease-in-out;
+        }
+
+
+        @media (max-width: 576px) {
+            #app {
+                column-gap: 10px;
+                column-count: 1;
+            }
+
+            #app img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-md-4 px-md-5 px-4 py-2 position-relative">
+        <nav class="navbar navbar-expand- navbar-light py-md-4 px-md-5 px-2 py-2 position-relative">
             <div class="container">
-                <a href="index.html" class="navbar-brand">D</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
-                    aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <a href="index.html" class="navbar-brand">Dinesh Patel</a>
+                <button class="navbar-toggler d-block" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navCollapse">
-                    <ul class="navbar-nav">
+
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+                data-bs-backdrop="false" data-bs-scroll="true">
+
+                <div class="offcanvas-header w-100">
+                    <button type="button" class="btn-close text-reset ms-auto py-4 px-4" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-3">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link active mx-2">Home</a>
                         </li>
@@ -83,10 +124,13 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
 
     <main class="min-vh-100">
+
+        <!-- Homepage Image  -->
         <section class="intro my-4">
             <div class="container">
                 <div class="intro-content-wrapper">
@@ -100,15 +144,76 @@
             </div>
         </section>
 
-        <section class="scroll-text my-5">
-            <div class="bg-dark text-white">
-                <marquee width="100%" direction="left" height="auto" scrollamount="15">
-                    <h5>
-                        Roboto has a dual nature. It has a mechanical skeleton.
-                        Roboto has a dual nature. It has a mechanical skeleton.
-                        Roboto has a dual nature. It has a mechanical skeleton.
-                    </h5>
-                </marquee>
+
+        <!-- Homepage Gallery -->
+        <section class="home-gallery">
+            <div class="container">
+                <div class="mx-md-1 mx-0 my-5">
+                    <div id="app">
+                        <img src="img/aditya-chinchure-EEzYovNQYss-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/jeet-khatri-XfaLPqBDQLM-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/sylvester-dsouza-LAprsXXH-Nc-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/frank-holleman-R8zSebH_WUM-unsplash(1).jpg" alt="" class="workCls">
+                        <img src="img/elcarito-StDikv_0r18-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/muhammad-muzamil-7S9x9US26Ow-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/francisco-arnela-tp8qeCAFBrw-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/annie-spratt-Qvwqfz1mpFw-unsplash.jpg" alt="" class="workCls">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Homepage Contact Section -->
+        <section class="hp-contact mb-5 text-white px-2">
+            <div class="container">
+                <div class="contact-wrapper mx-1">
+                    <div class="contact-head">
+                        <h3 class="text-white">Hi There!</h3>
+                    </div>
+                    <div class="contact-body row">
+                        <div class="col-md-6 p-0">
+                            <form action="submit" class="row">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" placeholder="Your email">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea type="text" class="form-control" placeholder="Message"
+                                        rows="3"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-light">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-md-6 mt-5 mt-md-0 px-md-5 px-0">
+                            <div class="d-flex flex-column">
+                                <div class="link-1">
+                                    <h3>Contact</h3>
+                                    <a class="text-white" href="#">
+                                        <h5>name@example.com</h5>
+                                    </a>
+                                    <div class="icons d-inline-block mt-2">
+                                        <a href="#" class="text-white"><i class="bi bi-facebook mx-md-2 mx-2"></i></a>
+                                        <a href="#" class="text-white"><i class="bi bi-instagram mx-md-2 mx-2"></i></a>
+                                        <a href="#" class="text-white"><i class="bi bi-twitter mx-md-2 mx-2"></i></a>
+                                    </div>
+                                </div>
+                                <div class="link-2 mt-5">
+                                    <h3>Rajkot</h3>
+                                    <h5 class="lh-lg">501, Nayantara Heights,
+                                        <br>
+                                        Gujarat - 360110
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -136,6 +241,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://udee.space/storage/app/public/community/assets/js/img-previewer.min.js"></script>
+    <script>
+        const a = new ImgPreviewer('body', {
+            scrollbar: true
+        })
+    </script>
 
 </body>
 

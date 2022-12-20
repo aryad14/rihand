@@ -65,6 +65,10 @@ button:focus {
     /* left: 30%; */
 }
 
+.navbar-toggler {
+    padding: 0 !important;
+}
+
 .nav-link, .dropdown-item {
     font-family: 'Ranade', sans-serif;
     color: #000 !important;
@@ -364,4 +368,33 @@ button:focus {
     font-size: 18px;
     font-family: 'Tabular', sans-serif;
 
+}
+
+
+/* Video Page */
+
+.video-container {
+    margin: 2rem 0;
+}
+
+.video-container .col-md-12 {
+    padding: 0 !important;
+}
+
+@media (max-width: 576px) {
+    .video-container .col-md-12 {
+        padding: 0.5rem !important;
+    }
+
+    .video-container .col-md-6 {
+        padding: 0.5rem !important;
+    }
+
+    .video-container .col-md-4 {
+        padding: 0.5rem !important;
+    }
+
+    .video-container .col-md-3 {
+        padding: 0.5rem !important;
+    }
 }

@@ -17,6 +17,10 @@ button:focus {
     border: none !important;
 }
 
+.bg-dark {
+    background-color: #000 !important;
+}
+
 
 
 /* Header Navigation */
@@ -45,10 +49,20 @@ button:focus {
         margin-top: 4rem;
     }
 
+    .navbar-nav .dropdown-menu {
+        position: relative;
+        left: 30%;
+    }
+
     .offcanvas-body .navbar-nav .nav-link{
         text-align: center;
         margin: 0 auto !important;
     }
+}
+
+.navbar-nav .dropdown-menu {
+    position: relative;
+    /* left: 30%; */
 }
 
 .nav-link, .dropdown-item {

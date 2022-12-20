@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
+
+
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=montserrat@500,700,200,400,100,800,300,600&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=asap@700,600,500,400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=tabular@600,700,500,400,300&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,100,400,500&display=swap" rel="stylesheet">
+
+    <title>Dinesh Patel - Gallery</title>
+
+
+    <!-- Internal CSS -->
+    <style>
+        /* Change Column Count to change Columns in the Gallery */
+        #app {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 2;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 20px;
+            transition: all .35s ease-in-out;
+        }
+
+
+        @media (max-width: 576px) {
+            #app {
+                column-gap: 10px;
+            }
+
+            #app img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand- navbar-light py-md-4 px-md-5 px-2 py-2 position-relative">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Dinesh Patel</a>
+                <button class="navbar-toggler d-block" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+                data-bs-backdrop="false" data-bs-scroll="true">
+
+                <div class="offcanvas-header w-100">
+                    <button type="button" class="btn-close text-reset ms-auto py-4 px-4" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link mx-2">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="gallery-1.html">Gallery - 1</a></li>
+                                <li><a class="dropdown-item" href="gallery-2.html">Gallery - 2</a></li>
+                                <li><a class="dropdown-item" href="gallery-3.html">Gallery - 3</a></li>
+                                <li><a class="dropdown-item" href="gallery-4.html">Gallery - 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Video
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="video-1.html">Video - 1</a></li>
+                                <li><a class="dropdown-item" href="video-2.html">Video - 2</a></li>
+                                <li><a class="dropdown-item" href="video-3.html">Video - 3</a></li>
+                                <li><a class="dropdown-item" href="video-4.html">Video - 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Collection
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="col-1.html">Collection - 1</a></li>
+                                <li><a class="dropdown-item" href="col-2.html">Collection - 2</a></li>
+                                <li><a class="dropdown-item" href="col-3.html">Collection - 3</a></li>
+                                <li><a class="dropdown-item" href="col-4.html">Collection - 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link mx-2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link mx-2">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="exhibit.html" class="nav-link mx-2">Exhibit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="min-vh-100">
+
+        <!-- Gallery -->
+        <section class="home-gallery">
+            <div class="container">
+                <div class="mx-md-1 mx-0 my-5">
+                    <div id="app">
+                        <img src="img/aditya-chinchure-EEzYovNQYss-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/ankit-sinha-qKgRJ9_vajY-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/annie-spratt-Qvwqfz1mpFw-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/elcarito-StDikv_0r18-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/francisco-arnela-tp8qeCAFBrw-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/frank-holleman-R8zSebH_WUM-unsplash(1).jpg" alt="" class="workCls">
+                        <img src="img/yatharth-roy-vibhakar-JfAAiJrzW2M-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/sylvester-dsouza-LAprsXXH-Nc-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/jeet-khatri-XfaLPqBDQLM-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/muhammad-muzamil-7S9x9US26Ow-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/sarthak-kwatra-oxXAKWz2qK0-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/stephane-hermellin-klnRXrqi9Kg-unsplash.jpg" alt="" class="workCls">
+                        <img src="img/annie-spratt-QtJEIcznOYc-unsplash.jpg" alt="" class="workCls">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white py-4">
+        <div class="bg-dark py-md-4 py-4 px-md-5 px-2">
+            <div class="container bg-dark text-white">
+                <div
+                    class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-start align-items-md-center gap-3 align-items-start">
+                    <div
+                        class="footer-left d-flex flex-lg-row flex-column gap-3 align-items-md-center align-items-start">
+                        <h3>Dinesh Patel</h3>
+                        <a href="#" class="text-white">
+                            <h5>&copy; 2022 Udee Space, All Rights Reserved</h5>
+                        </a>
+                    </div>
+                    <div class="footer-right d-flex">
+                        <a href="#" class="text-white"><i class="bi bi-facebook mx-md-3 ms-0 me-2"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram mx-md-3 mx-2"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter mx-md-3 mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://udee.space/storage/app/public/community/assets/js/img-previewer.min.js"></script>
+    <script>
+        const a = new ImgPreviewer('body', {
+            scrollbar: true
+        })
+    </script>
+
+</body>
+
+</html>

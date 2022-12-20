@@ -54,7 +54,7 @@ button:focus {
         left: 30%;
     }
 
-    .offcanvas-body .navbar-nav .nav-link{
+    .offcanvas-body .navbar-nav .nav-link {
         text-align: center;
         margin: 0 auto !important;
     }
@@ -69,7 +69,8 @@ button:focus {
     padding: 0 !important;
 }
 
-.nav-link, .dropdown-item {
+.nav-link,
+.dropdown-item {
     font-family: 'Ranade', sans-serif;
     color: #000 !important;
     font-weight: 400;
@@ -106,7 +107,7 @@ button:focus {
 
 
 /* Footer */
-.footer-left h3{
+.footer-left h3 {
     text-transform: uppercase;
     font-size: 27px;
     font-family: 'Monstrerrat', sans-serif;
@@ -124,14 +125,14 @@ button:focus {
 }
 
 @media (max-width: 576px) {
-    .footer-left h3{
+    .footer-left h3 {
         text-transform: uppercase;
         font-size: 24px;
         font-family: 'Monstrerrat', sans-serif;
         font-weight: 800;
         letter-spacing: 2px;
     }
-    
+
     .footer-left h5 {
         text-decoration: underline;
         font-size: 14px;
@@ -236,15 +237,6 @@ button:focus {
     }
 }
 
-/* Homepage Scroll text */
-.scroll-text h5{
-    font-family: 'Tabular', sans-serif;
-    color: #fff !important;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: 1px;
-}
-
 
 /* Homepage Contact Section */
 
@@ -260,7 +252,7 @@ button:focus {
     padding: 5rem 0;
 }
 
-.contact-wrapper .contact-head h3{
+.contact-wrapper .contact-head h3 {
     font-weight: 1000;
     font-family: 'Ranade', sans-serif;
     font-size: 180px;
@@ -270,7 +262,7 @@ button:focus {
 }
 
 @media (max-width: 992px) {
-    .contact-wrapper .contact-head h3{
+    .contact-wrapper .contact-head h3 {
         font-weight: 1000;
         font-family: 'Ranade', sans-serif;
         font-size: 130px;
@@ -281,7 +273,7 @@ button:focus {
 }
 
 @media (max-width: 768px) {
-    .contact-wrapper .contact-head h3{
+    .contact-wrapper .contact-head h3 {
         font-weight: 1000;
         font-family: 'Ranade', sans-serif;
         font-size: 100px;
@@ -292,7 +284,7 @@ button:focus {
 }
 
 @media (max-width: 576px) {
-    .contact-wrapper .contact-head h3{
+    .contact-wrapper .contact-head h3 {
         font-weight: 1000;
         font-family: 'Ranade', sans-serif;
         font-size: 70px;
@@ -316,7 +308,7 @@ button:focus {
     font-family: 'Tabular', sans-serif;
 }
 
-.contact-body form input::placeholder, 
+.contact-body form input::placeholder,
 .contact-body form textarea::placeholder {
     color: #fff !important;
 }
@@ -541,5 +533,196 @@ button:focus {
 
     .collection-section .col-lg-3 {
         padding: 0 1.25rem;
+    }
+}
+
+
+/* About Page */
+.about-heading {
+    position: absolute;
+    text-align: center;
+    left: 28vw;
+    right: 28vw;
+}
+
+
+.about-heading h3 {
+    font-size: 140px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Monstrerrat', sans-serif;
+    line-height: 0.9;
+    text-shadow: 8px 11px 0px #ffffff;
+    z-index: 1050 !important;
+    /* position: relative; */
+}
+
+.about-img {
+    width: 70%;
+    margin: 0 auto !important;
+    z-index: -1;
+    padding-top: 12rem;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .about-heading {
+        position: absolute;
+        text-align: center;
+        left: 28vw;
+        right: 28vw;
+    }
+
+
+    .about-heading h3 {
+        font-size: 80px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: 'Monstrerrat', sans-serif;
+        line-height: 0.9;
+        text-shadow: 8px 11px 0px #ffffff;
+        z-index: 1050 !important;
+        position: relative;
+    }
+
+    .about-img {
+        width: 70%;
+        margin: 0 auto !important;
+        z-index: -1;
+        padding-top: 3rem;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .about-heading {
+        position: absolute;
+        text-align: center;
+        left: 18vw;
+        right: 18vw;
+    }
+
+    .about-heading h3 {
+        font-size: 120px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: 'Monstrerrat', sans-serif;
+        line-height: 0.9;
+        text-shadow: 8px 11px 0px #ffffff;
+        z-index: 1050 !important;
+        position: relative;
+    }
+
+    .about-img {
+        width: 100%;
+        margin: 0 auto !important;
+        z-index: -1;
+        padding-top: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-heading h3 {
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: 'Monstrerrat', sans-serif;
+        line-height: 0.9;
+        text-shadow: 8px 11px 0px #ffffff;
+        z-index: 1050 !important;
+        position: relative;
+    }
+
+    .about-img {
+        width: 100%;
+        margin: 0 auto !important;
+        z-index: -1;
+        padding-top: 9rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about-heading {
+        position: absolute;
+        text-align: center;
+        left: 8vw;
+        right: 8vw;
+    }
+
+    .about-heading h3 {
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: 'Monstrerrat', sans-serif;
+        line-height: .9;
+        height: 20px;
+        letter-spacing: 1px;
+        text-shadow: 3px 3px 0px #ffffff;
+        z-index: 1050 !important;
+        position: relative;
+    }
+
+    .about-img {
+        width: 100%;
+        margin: 0 auto !important;
+        z-index: -1;
+        padding-top: 4.5rem;
+    }
+}
+
+.about-body {
+    margin: 5rem 0;
+    padding: 0 16rem;
+}
+
+.about-body h5 {
+    font-family: 'Tabular', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+@media (max-width: 992px) {
+    .about-body {
+        margin: 5rem 0;
+        padding: 0 5rem;
+    }
+
+    .about-body h5 {
+        font-family: 'Tabular', sans-serif;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-body {
+        margin: 5rem 0;
+        padding: 0 1rem;
+    }
+
+    .about-body h5 {
+        font-family: 'Tabular', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-body {
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .about-body h5 {
+        font-family: 'Tabular', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
     }
 }

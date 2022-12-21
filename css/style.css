@@ -333,6 +333,7 @@ button:focus {
     margin-bottom: 2rem;
     color: #fff !important;
     font-family: 'Tabular', sans-serif;
+    border-radius: 0 !important;
 }
 
 .hp-contact-body form input::placeholder,
@@ -819,6 +820,7 @@ button:focus {
     font-family: 'Tabular', sans-serif;
     padding: 0 0 !important;
     font-weight: 500;
+    border-radius: 0 !important;
 }
 
 .contact-body form input::placeholder,

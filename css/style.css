@@ -878,3 +878,15 @@ button:focus {
     color: #000 !important;
 
 }
+
+
+/* Exhibit Page */
+.exhibit {
+    margin: 0 7rem;
+}
+
+@media (max-width: 768px) {
+    .exhibit {
+        margin: 0;
+    }
+}

@@ -31,6 +31,11 @@ button:focus {
     font-size: 45px;
 }
 
+.offcanvas {
+    background-color: #000;
+    /* color: #FFF !important; */
+}
+
 @media (max-width: 576px) {
     .navbar .navbar-brand {
         font-family: 'Monstrerrat', sans-serif;
@@ -61,8 +66,17 @@ button:focus {
     }
 }
 
+@media (max-width: 768px) {
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
 .navbar-nav .dropdown-menu {
     position: relative;
+    background-color: #212529;
     /* left: 30%; */
 }
 
@@ -72,15 +86,27 @@ button:focus {
 
 .nav-link,
 .dropdown-item {
-    font-family: 'Ranade', sans-serif;
-    color: #000 !important;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #fff !important;
     font-weight: 400;
     width: fit-content;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.dropdown-item {
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: #000;
 }
 
 .dropdown-menu {
     width: fit-content;
     z-index: 1050 !important;
+    position: absolute !important;
 }
 
 .nav-link::after {
@@ -88,7 +114,7 @@ button:focus {
     display: block;
     width: 0;
     height: 1px;
-    background: #000;
+    background: #fff;
     transition: width .35s;
 }
 
